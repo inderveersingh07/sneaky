@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sneaky Sneaky But Not Sneaky Enough</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      box-sizing: border-box;
+      background: #0b0f14;
+      color: #39ff88;
+      font-family: "Courier New", Courier, monospace;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.75rem, 5vw, 3.5rem);
+      line-height: 1.2;
+      text-wrap: balance;
+      text-shadow: 0 0 12px rgba(57, 255, 136, 0.45);
+    }
+
+    .cursor {
+      animation: blink 1s steps(1) infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .cursor { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <!-- there's nothing here ;) aWYgeW91IGZpbmQgdGhpcyBETSBtZSB0aGUgZmxhZyBpbiBkaXNjb3JkLiBmbGFne1lvdSBhcmUgYSBnb2F0fQ== -->
+  <h1>Sneaky Sneaky But Not Sneaky Enough<span class="cursor" aria-hidden="true">_</span></h1>
+</body>
+</html>
